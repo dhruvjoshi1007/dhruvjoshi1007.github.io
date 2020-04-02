@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dhruv Joshi / dhruvjoshi1007.github.io"
+title                    : "dhruvjoshi1007.github.io"
 title_separator          : "-"
 name                     : &name "Dhruv Joshi"
 description              : &description "CS undergrad"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "dhruvjoshi1007@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/dhruv-joshi-b65a6b16a/"
   orcid            : 
   pinterest        :
   soundcloud       :
