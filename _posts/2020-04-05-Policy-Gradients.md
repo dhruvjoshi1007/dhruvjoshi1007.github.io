@@ -78,7 +78,7 @@ $$
 <br />
 <br />
 Thus we can write our gradient update as 
-$\theta \larr \theta + \alpha \nabla_{\theta} J(\theta)$
+$\theta = \theta + \alpha \nabla_{\theta} J(\theta)$
 and use our preferred optimiser to run gradient ascent
 <br />
 ## REINFORCE Algorithm
