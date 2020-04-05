@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-If you are have any problems, questions or suggestions, feel free to send me an [email](dhruvjoshi1007@gmail.com) 
+If you have any problems, questions or suggestions, feel free to send me an [email](dhruvjoshi1007@gmail.com) 
