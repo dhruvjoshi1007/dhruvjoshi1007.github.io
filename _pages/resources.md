@@ -21,5 +21,6 @@ These are some of the courses I've gone through and enjoyed, along with some tha
  - [Deep Bayes 2019 - Bayesgroup.ru](https://www.youtube.com/playlist?list=PLe5rNUydzV9QHe8VDStpU0o8Yp63OecdW)
  - [Signals and Systems - MIT](https://www.youtube.com/playlist?list=PL41692B571DD0AF9B)
  - [SLAM Course - Cyrill Stachniss](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_)
+ - [Deep Unsupervised Learning - UC Berkely](https://sites.google.com/view/berkeley-cs294-158-sp19/home)
  - [cs 330 - Stanford](https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5)
  - [Statistical Learning Theory - MIT](https://www.youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI)
