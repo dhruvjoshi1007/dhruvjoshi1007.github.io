@@ -22,21 +22,13 @@ This post assumes basic knowledge of policy gradient methods, a refresher on thi
 
 The gradient in the policy gradient algorithm is <br />
 
-$$
-\nabla_{\theta} J(\theta) \approx \sum_{i}[\sum_{t} \nabla_{\theta} log(\pi_{\theta}(s_{t}^{i} , a_{t}^{i}))G_{t}^{i}]
-$$
+$$\nabla_{\theta} J(\theta) \approx \sum_{i}[\sum_{t} \nabla_{\theta} log(\pi_{\theta}(s_{t}^{i} , a_{t}^{i}))G_{t}^{i}]$$
 
-$$
-\theta = \theta + \alpha \nabla_{\theta} J(\theta)
-$$
+$$\theta = \theta + \alpha \nabla_{\theta} J(\theta)$$
 
-$$
-\theta = \theta + \alpha \nabla_{\theta} J(\theta)
-$$
+$$\theta = \theta + \alpha \nabla_{\theta} J(\theta)$$
 
-$$
-\theta = \theta + \alpha g
-$$
+$$\theta = \theta + \alpha g$$
 
 <br />
 where $g$ is the gradient. Here we're taking the first order derivative which assumes that the surface of our function is relatively flat when in fact it could be highly curved. A large step on a highly curved surface could lead to a drastically different policy which is extremely bad during training, meanwhile if we take too small a step our network will take too long to converge. <br />
@@ -70,7 +62,7 @@ $$
 
 $$
 s.t. \quad D_{KL}(\theta||\theta_{k}) \le \delta
-$$ <br />
+$$
 
 and 
 $$
