@@ -73,10 +73,12 @@ s.t. \quad D_{KL}(\theta||\theta_{k}) \le \delta
 $$
 
 and 
+
 $$
 D_{KL}(\theta||\theta_{k})
-$$ 
-is the average KL divergence between policies across states visited by the old policy. <br />
+$$
+
+ is the average KL divergence between policies across states visited by the old policy. <br />
 
 $$
 D_{KL}(\theta||\theta_{k}) = E_{s \sim \pi_{\theta_{k}}}[D_{KL}(\pi_{\theta}(.|s)||\pi_{\theta_{k}}(.||s))]
