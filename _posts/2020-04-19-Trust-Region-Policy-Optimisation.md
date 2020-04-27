@@ -10,9 +10,7 @@ tags:
   - Reinforcement Learning
   - Deep Learning
 ---
-
-
-# Trust Region Policy Optimisation (TRPO)
+__________________________________________________________
 
 Policy Gradient methods are quite popular in reinforcement learning and they involve directly learning a policy $\pi$ from sampled trajectories. We generally run gradient ascent on our networks to take a step in the direction that maximises our reward but overconfidence in our steps can lead to poor performance. Sometimes even small steps in parameter space $\theta$ can lead to policies that lead to extremely different outcomes from our policy network. TRPO is an iterative procedure for optimising policies, with guaranteed monotonic improvement. It is similar to natural policy gradient methods and is effective for optimising large nonlinear policies such as neural networks. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.
 <br />

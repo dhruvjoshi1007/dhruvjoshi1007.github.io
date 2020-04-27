@@ -7,8 +7,7 @@ tags:
   - Reinforcement Learning
   - Deep Learning
 ---
-
-# Policy Gradients
+__________________________________________________________
 
 The reinforcement learning objective is to find a behaviour or policy that helps the agent maximize the reward obtained from the environment. Policy gradient methods directly represent the policy $\pi$, generally using a function parameterized by $\theta$.  The goal can be represented as
 
