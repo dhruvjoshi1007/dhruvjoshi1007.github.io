@@ -112,7 +112,7 @@ To put it simply, the Monte-Carlo return $G_{t}$ gives importance to the gradien
 
 ## Using Value Function Approximators
 One way of fixing the variance problem of the Monte-Carlo estimates is to run many trajectories and average them out while calculating our gradient, but increasing the batch size becomes computationally more expensive.
-What if we use a separate network $V_{\phi}(s)$ parametrized by $\phi$ to approximate our value function. We can update our estimate of  $Q_{\phi}(s,a)$ each time we run our training loop and then plug it into the gradient update equation instead of $G_{t}$ while running the gradient update step.<br />
+What if we use a separate network $Q_{\phi}(s, a)$ parametrized by $\phi$ to approximate our action value function. We can update our estimate of  $Q_{\phi}(s,a)$ each time we run our training loop and then plug it into the gradient update equation instead of $G_{t}$ while running the gradient update step.<br />
 <br />
 The updates will look something like this:
 <br />
