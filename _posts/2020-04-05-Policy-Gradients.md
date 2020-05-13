@@ -112,23 +112,23 @@ To put it simply, the Monte-Carlo return $G_{t}$ gives importance to the gradien
 
 ## Using Value Function Approximators
 One way of fixing the variance problem of the Monte-Carlo estimates is to run many trajectories and average them out while calculating our gradient, but increasing the batch size becomes computationally more expensive.
-What if we use a separate network $V_{\phi}(s)$ parametrized by $\phi$ to approximate our value function. We can update our estimate of  $V_{\phi}(s)$ each time we run our training loop and then plug it into the gradient update equation instead of $G_{t}$ while running the gradient update step.<br />
+What if we use a separate network $V_{\phi}(s)$ parametrized by $\phi$ to approximate our value function. We can update our estimate of  $Q_{\phi}(s,a)$ each time we run our training loop and then plug it into the gradient update equation instead of $G_{t}$ while running the gradient update step.<br />
 <br />
 The updates will look something like this:
 <br />
 <br />
 $$
-\phi = \phi - 0.5\alpha \nabla[\frac{1}{N}\sum_{t}^{T}(V_{\phi}(s_{t}) - G_{t})^{2}]
+\phi = \phi - 0.5\alpha \nabla[\frac{1}{N}\sum_{t}^{T}(Q_{\phi}(s_{t}, a_{t}) - G_{t})^{2}]
 $$
 <br />
 <br />
 $$
-\phi = \phi - \alpha[\frac{1}{N}\sum_{t}^{T}(V_{\phi}(s_{t}) - G_{t})\nabla V_{\phi}(s_{t})]
+\phi = \phi - \alpha[\frac{1}{N}\sum_{t}^{T}(Q_{\phi}(s_{t}, a_{t}) - G_{t})\nabla Q_{\phi}(s_{t}, a_{t})]
 $$
 <br />
 <br />
 $$
-\nabla_{\theta} J(\theta) \approx \sum_{i}[(\sum_{t} \nabla log(\pi_{\theta}(s_{t}^{i} , a_{t}^{i})))V_{\phi}(s_{t})]
+\nabla_{\theta} J(\theta) \approx \sum_{i}[(\sum_{t} \nabla log(\pi_{\theta}(s_{t}^{i} , a_{t}^{i})))Q_{\phi}(s_{t}, a_{t})]
 $$
 <br />
 <br />
